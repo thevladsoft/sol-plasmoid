@@ -53,6 +53,11 @@ Item {
         
 //         print("first"+root.imagenes[0])
         reloadimages(true)
+        plasmoid.setAction('reload', i18n('Reload from source'), 'system-reboot');
+    }
+    
+    function action_reload(){
+        reloadimages(true)
     }
     
     Connections {

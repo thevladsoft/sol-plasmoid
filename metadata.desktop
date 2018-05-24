@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Sol
 Comment=Images of the sun
-Icon=text-field
+Icon=kstars_stars
  
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml
