@@ -172,6 +172,14 @@ This channel is designed to study solar flares. It measures extremely hot temper
             height: root.height
             visible: parent.visible
         }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
     }
     
     Image{
@@ -192,6 +200,14 @@ This channel is designed to study solar flares. It measures extremely hot temper
             height: root.height
             visible: parent.visible
         }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
     }
     Image{
         id: sol2
@@ -210,6 +226,14 @@ This channel is especially good at showing coronal loops - the arcs extending of
             width: root.width
             height: root.height
             visible: parent.visible
+        }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
         }
     }
     Image{
@@ -230,6 +254,14 @@ This channel highlights the outer atmosphere of the Sun - called the corona - as
             height: root.height
             visible: parent.visible
         }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
     }
     Image{
         id: sol4
@@ -248,6 +280,14 @@ This channel highlights the active region of the outer atmosphere of the Sun - t
             width: root.width
             height: root.height
             visible: parent.visible
+        }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
         }
     }
     Image{
@@ -268,6 +308,14 @@ This channel is especially good at showing areas where cooler dense plumes of pl
             height: root.height
             visible: parent.visible
         }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
     }
     Image{
         id: sol6
@@ -286,6 +334,14 @@ This channel highlights the active region of the outer atmosphere of the Sun - t
             width: root.width
             height: root.height
             visible: parent.visible
+        }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
         }
     }
     Image{
@@ -306,6 +362,14 @@ This channel often shows a web-like pattern of bright areas that highlight place
             height: root.height
             visible: parent.visible
         }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
     }
     Image{
         id: sol8
@@ -324,6 +388,14 @@ This channel often shows a web-like pattern of bright areas that highlight place
             width: root.width
             height: root.height
             visible: parent.visible
+        }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
         }
     }
     Image{
@@ -344,6 +416,14 @@ This image shows the magnetic field directions near the surface of the Sun. Whit
             height: root.height
             visible: parent.visible
         }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
     }
     Image{
         id: sol10
@@ -361,6 +441,14 @@ This image shows the magnetic field directions near the surface of the Sun. Whit
             width: root.width
             height: root.height
             visible: parent.visible
+        }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
         }
     }
     
