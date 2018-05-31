@@ -91,6 +91,54 @@ Item {
         }
     }
     
+    Dialog{
+        id: dialogo
+        visible: false
+        width: 800
+        height: 600
+        modality:  Qt.NonModal
+        title: "The Sun now"
+        standardButtons : StandardButton.Close/*|StandardButton.Reset*/
+        onRejected: {
+            soldialog.source = ""
+//             if(plasmoid.configuration.middledirect){
+//                 web.url= root.realurl
+//             }else{
+//                 web.url= root.url
+//             }
+        }
+        QtControls.ScrollView{
+            id: scrolly
+            width:dialogo.width-20
+            height: dialogo.height-55
+            Image{
+                id: soldialog
+        //         Component.onCompleted:{root.imagenes[0] = sol0;}
+//                 width: scrolly.width; height: scrolly.height
+                //cache: false
+                fillMode: Image.PreserveAspectFit
+                source: ""
+    //             Behavior on opacity{ 
+    //                     NumberAnimation { duration: 700;easing.type:Easing.InExpo}
+    //             }
+    //             onOpacityChanged:{visible = opacity == 0?false:true}
+                
+            }
+        }
+        
+//         onVisibleChanged: {
+//             if(!dialogo.visible){
+//                 soldialog.source = ""
+//             }
+//             else {
+//                 if(plasmoid.configuration.source < root.imagen.length){
+//                     soldialog.source = "https://umbra.nascom.nasa.gov/images/" + imagen[plasmoid.configuration.source] + ".gif"
+//                 }else{
+//                     soldialog.source = "https://umbra.nascom.nasa.gov/images/" + imagen[root.alternator] + ".gif"
+//                 }
+//             }
+//         }
+    }
     
     Image{
         id: sol0
@@ -289,6 +337,19 @@ Item {
             width: root.width
             height: root.height
             visible: parent.visible
+        }
+    }
+    
+    MouseArea {
+        anchors.fill: root
+        acceptedButtons: Qt.MiddleButton
+        onClicked: {
+            if(plasmoid.configuration.source < root.imagen.length){
+                soldialog.source = "https://umbra.nascom.nasa.gov/images/" + root.imagen[plasmoid.configuration.source] + ".gif"
+            }else{
+                soldialog.source = "https://umbra.nascom.nasa.gov/images/" + root.imagen[root.alternator] + ".gif"
+            }
+            dialogo.visible = true
         }
     }
     
