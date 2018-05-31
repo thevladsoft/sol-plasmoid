@@ -11,6 +11,7 @@ Item {
     
     property alias cfg_cleaner: cleanercheck.checked
     property alias cfg_cleanersize: cleanerspin.value
+    property alias cfg_background: showbackground.checked
     
     
     QtLayouts.ColumnLayout {
@@ -35,6 +36,12 @@ Item {
                         text: "mb"
                         enabled: cleanercheck.checked
                 }
+        }
+        
+        QtControls.CheckBox {
+            id: showbackground
+            //QtLayouts.Layout.fillWidth: true
+            text: "Show app background"
         }
                     
     }

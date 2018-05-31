@@ -59,6 +59,9 @@ Item {
 //         print("first"+root.imagenes[0])
         reloadimages(true)
         plasmoid.setAction('reload', i18n('Reload from source'), 'system-reboot');
+        
+        plasmoid.backgroundHints = plasmoid.configuration.background?"StandardBackground":"NoBackground"
+        
     }
     
     function action_reload(){
@@ -71,6 +74,9 @@ Item {
         onSourceChanged: {
             reloadimages(true)
             root.alternator = 0
+        }
+        onBackgroundChanged: {
+            plasmoid.backgroundHints = plasmoid.configuration.background?"StandardBackground":"NoBackground"
         }
     }
     
@@ -146,6 +152,7 @@ Item {
 //             }
 //         }
     }
+    
     
     Image{
         id: sol0

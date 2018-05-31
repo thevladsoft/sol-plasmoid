@@ -26,6 +26,11 @@
         <default>20</default>
     </entry>
     
+    <entry name="background" type="Bool">
+        <label>show background</label>
+        <default>false</default>
+    </entry>
+    
   </group>
 
 </kcfg>
