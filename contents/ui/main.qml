@@ -31,12 +31,17 @@ Item {
     id:root
 
     width: 350
-    property var imagen: ["latest_aia_94","latest_aia_131","latest_aia_171","latest_aia_193","latest_aia_211","latest_aia_304","latest_aia_335","latest_aia_1600","latest_aia_1700","latest_hmi_mgram","latest_hmi_igram"]
+    property var imagen:
+    ["0094","0131","0171","0193","0211","0304","0335","1600","1700","HMIB","HMIIC"]
+    
+    property var resolutions:["256","512","1024","2048"]
+//     ["latest_aia_94","latest_aia_131","latest_aia_171","latest_aia_193","latest_aia_211","latest_aia_304","latest_aia_335","latest_aia_1600","latest_aia_1700","latest_hmi_mgram","latest_hmi_igram"]
     
     property var lasttime: 0
     property var lastminute: 0
     property var imagenes: []
     property var alternator: 0
+    
     
     Component.onCompleted:{
         root.imagenes[0] = sol0
@@ -76,7 +81,8 @@ Item {
                 root.imagenes[i].opacity = 0.
 //                 root.imagenes[i].visible = false
             }
-            root.imagenes[plasmoid.configuration.source].source = "https://umbra.nascom.nasa.gov/images/" + imagen[plasmoid.configuration.source] + (plasmoid.configuration.resolution==3?".gif":"_tn.gif")
+            root.imagenes[plasmoid.configuration.source].source = "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_"+root.resolutions[plasmoid.configuration.resolution-1]+"_"+ imagen[plasmoid.configuration.source]+".jpg"
+//             root.imagenes[plasmoid.configuration.source].source = "https://umbra.nascom.nasa.gov/images/" + imagen[plasmoid.configuration.source] + (plasmoid.configuration.resolution==3?".gif":"_tn.gif")
 //             root.imagenes[plasmoid.configuration.source].visible = true
             root.imagenes[plasmoid.configuration.source].opacity = 1.
         }else{
@@ -84,7 +90,8 @@ Item {
                 if(load){root.imagenes[i].source = ""}
                 root.imagenes[i].opacity = 0.
 //                 root.imagenes[i].visible = false
-                root.imagenes[i].source = "https://umbra.nascom.nasa.gov/images/" + imagen[i] + (plasmoid.configuration.resolution==3?".gif":"_tn.gif")
+                root.imagenes[i].source = "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_"+root.resolutions[plasmoid.configuration.resolution-1]+"_"+ imagen[i]+ ".jpg"
+//                 root.imagenes[i].source = "https://umbra.nascom.nasa.gov/images/" + imagen[i] + (plasmoid.configuration.resolution==3?".gif":"_tn.gif")
             }
             root.imagenes[root.alternator].opacity = 1.
 //             root.imagenes[root.alternator].visible = true
@@ -355,9 +362,9 @@ This image shows the magnetic field directions near the surface of the Sun. Whit
         acceptedButtons: Qt.MiddleButton
         onClicked: {
             if(plasmoid.configuration.source < root.imagen.length){
-                soldialog.source = "https://umbra.nascom.nasa.gov/images/" + root.imagen[plasmoid.configuration.source] + ".gif"
+                soldialog.source = "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_"+root.resolutions[3]+"_"+ imagen[plasmoid.configuration.source]+".jpg"
             }else{
-                soldialog.source = "https://umbra.nascom.nasa.gov/images/" + root.imagen[root.alternator] + ".gif"
+                soldialog.source = "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_"+root.resolutions[3]+"_"+ imagen[root.alternator]+ ".jpg"
             }
             dialogo.visible = true
         }

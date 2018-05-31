@@ -42,7 +42,7 @@ Item {
 				exclusiveGroup: resradiobuttons
 				onCheckedChanged:{page.resolution = thumbnail.checked+middle.checked*2+high.checked*3}
 				Component.onCompleted:{ checked= plasmoid.configuration.resolution == 2}
-				visible: false
+// 				visible: false
 			}
 			RadioButton{
 				id: high
