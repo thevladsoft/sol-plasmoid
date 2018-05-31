@@ -68,7 +68,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -77,7 +77,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_94_tn.gif"
+ 				source: "thumbnails/latest_256_0094.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -99,7 +99,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -108,7 +108,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_131_tn.gif"
+ 				source: "thumbnails/latest_256_0131.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -129,7 +129,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -138,7 +138,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_171_tn.gif"
+ 				source: "thumbnails/latest_256_0171.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -159,7 +159,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -168,7 +168,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_193_tn.gif"
+ 				source: "thumbnails/latest_256_0193.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -189,7 +189,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -198,7 +198,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_211_tn.gif"
+ 				source: "thumbnails/latest_256_0211.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -219,7 +219,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -228,7 +228,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_304_tn.gif"
+ 				source: "thumbnails/latest_256_0304.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -249,7 +249,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -258,7 +258,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_335_tn.gif"
+ 				source: "thumbnails/latest_256_0335.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -279,7 +279,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -288,7 +288,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_1600_tn.gif"
+ 				source: "thumbnails/latest_256_1600.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -309,7 +309,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -318,7 +318,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_aia_1700_tn.gif"
+ 				source: "thumbnails/latest_256_1700.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -339,7 +339,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -348,7 +348,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_hmi_mgram_tn.gif"
+ 				source: "thumbnails/latest_256_HMIB.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -369,7 +369,7 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -378,7 +378,7 @@ Item {
 			Image{
 				width: 40
 				height: 40
- 				source: "thumbnails/latest_hmi_igram_tn.gif"
+ 				source: "thumbnails/latest_256_HMIIC.jpg"
 			}
 			Label{
 				width:scroll.width-60
@@ -399,7 +399,37 @@ Item {
 				}
                 onCheckedChanged:{
 					var j = 0
-					for(var i = 0;i<12;i++){
+					for(var i = 0;i<13;i++){
+						j +=page.botones[i].checked*i
+					}page.source = j
+				}
+				exclusiveGroup: sourceradiobuttons
+			}
+			Image{
+				width: 40
+				height: 40
+ 				source: "thumbnails/latest_256_211193171.jpg"
+			}
+			Label{
+				width:scroll.width-60
+				height: 40
+				text: "AIA Composite 211, 193, 171"
+			}
+			MouseArea {anchors.fill: parent
+				onClicked: boton11.checked= true
+			}
+		}
+		RowLayout{
+			
+			RadioButton{
+				id: boton12
+				Component.onCompleted:{
+					checked= plasmoid.configuration.source == 12
+					page.botones[12] = boton12
+				}
+                onCheckedChanged:{
+					var j = 0
+					for(var i = 0;i<13;i++){
 						j +=page.botones[i].checked*i
 					}page.source = j
 				}
@@ -416,7 +446,7 @@ Item {
 				text: "All (show each image for 1 minute)"
 			}
 			MouseArea {anchors.fill: parent
-				onClicked: boton11.checked= true
+				onClicked: boton12.checked= true
 			}
 		}
 				

@@ -32,7 +32,7 @@ Item {
 
     width: 350
     property var imagen:
-    ["0094","0131","0171","0193","0211","0304","0335","1600","1700","HMIB","HMIIC"]
+    ["0094","0131","0171","0193","0211","0304","0335","1600","1700","HMIB","HMIIC","211193171"]
     
     property var resolutions:["256","512","1024","2048"]
 //     ["latest_aia_94","latest_aia_131","latest_aia_171","latest_aia_193","latest_aia_211","latest_aia_304","latest_aia_335","latest_aia_1600","latest_aia_1700","latest_hmi_mgram","latest_hmi_igram"]
@@ -55,6 +55,7 @@ Item {
         root.imagenes[8] = sol8
         root.imagenes[9] = sol9
         root.imagenes[10] = sol10
+        root.imagenes[11] = sol11
         
 //         print("first"+root.imagenes[0])
         reloadimages(true)
@@ -438,6 +439,34 @@ This image shows the magnetic field directions near the surface of the Sun. Whit
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
             mainText: "False color  solar photospheric Intensitygram"
+            width: root.width
+            height: root.height
+            visible: parent.visible
+        }
+        onStatusChanged:{
+            plasmoid.busy = true
+            for(var i = 0;i < root.imagen.length; i++){
+                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                    plasmoid.busy = false
+                }
+            }
+        }
+    }
+    
+     Image{
+        id: sol11
+//         Component.onCompleted:{root.imagenes[10] = sol10}
+        width: root.width; height: root.height
+        //cache: false
+        fillMode: Image.PreserveAspectFit
+        source: ""
+        Behavior on opacity{ 
+                NumberAnimation { duration: 700;easing.type:Easing.InExpo}
+        }
+        onOpacityChanged:{visible = opacity == 0?false:true}
+        PlasmaCore.ToolTipArea {
+            mainText: "AIA Composite 211, 193, 171
+This image combines three images with different, but very similar, temperatures. Each highlights a different part of the corona."
             width: root.width
             height: root.height
             visible: parent.visible
