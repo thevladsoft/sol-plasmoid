@@ -152,7 +152,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in Fe XVIII 94 Å"
+            mainText: "False color image of the Sun in Fe XVIII 94 Å
+This channel is designed to study solar flares. It measures extremely hot temperatures around 6 million Kelvin (10.8 million F)."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -171,7 +172,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in Fe XX 131 Å"
+            mainText: "False color image of the Sun in Fe XX 131 Å
+This channel is designed to study solar flares. It measures extremely hot temperatures around 10 million K (18 million F), as well as cool plasmas around 400,000 K (720,000 F)."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -189,7 +191,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in Fe IX, X 171 Å"
+            mainText: "False color image of the Sun in Fe IX, X 171 Å
+This channel is especially good at showing coronal loops - the arcs extending off of the Sun where plasma moves along magnetic field lines. The brightest spots seen here are locations where the magnetic field near the surface is exceptionally strong."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -207,7 +210,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in Fe XII 193 Å"
+            mainText: "False color image of the Sun in Fe XII 193 Å
+This channel highlights the outer atmosphere of the Sun - called the corona - as well as hot flare plasma. Hot active regions, solar flares, and coronal mass ejections will appear bright here. The dark areas - called coronal holes - are places where very little radiation is emitted, yet are the main source of solar wind particles."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -225,7 +229,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in Fe XIV 211 Å"
+            mainText: "False color image of the Sun in Fe XIV 211 Å
+This channel highlights the active region of the outer atmosphere of the Sun - the corona. Active regions, solar flares, and coronal mass ejections will appear bright here. The dark areas - called coronal holes - are places where very little radiation is emitted, yet are the main source of solar wind particles."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -243,7 +248,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in He II 304 Å Å"
+            mainText: "False color image of the Sun in He II 304 Å Å
+This channel is especially good at showing areas where cooler dense plumes of plasma (filaments and prominences) are located above the visible surface of the Sun. The bright areas show places where the plasma has a high density."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -261,7 +267,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in Fe XVI 335 Å"
+            mainText: "False color image of the Sun in Fe XVI 335 Å
+This channel highlights the active region of the outer atmosphere of the Sun - the corona. Active regions, solar flares, and coronal mass ejections will appear bright here. The dark areas - or coronal holes - are places where very little radiation is emitted, yet are the main source of solar wind particles."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -279,7 +286,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in C IV and continuum around 1600 Å"
+            mainText: "False color image of the Sun in C IV and continuum around 1600 Å
+This channel often shows a web-like pattern of bright areas that highlight places where bundles of magnetic fields lines are concentrated. However, small areas with a lot of field lines will appear black, usually near sunspots and active regions."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -297,7 +305,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color image of the Sun in continuum around 1700 Å"
+            mainText: "False color image of the Sun in continuum around 1700 Å
+This channel often shows a web-like pattern of bright areas that highlight places where bundles of magnetic fields lines are concentrated. However, small areas with a lot of field lines will appear black, usually near sunspots and active regions."
             width: root.width
             height: root.height
             visible: parent.visible
@@ -315,7 +324,8 @@ Item {
         }
         onOpacityChanged:{visible = opacity == 0?false:true}
         PlasmaCore.ToolTipArea {
-            mainText: "False color  solar photospheric magnetogram"
+            mainText: "False color  solar photospheric magnetogram
+This image shows the magnetic field directions near the surface of the Sun. White and black areas indicate opposite magnetic polarities, with white showing north (outward) polarity and black showing south (inward) polarity."
             width: root.width
             height: root.height
             visible: parent.visible
