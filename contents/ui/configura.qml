@@ -31,7 +31,7 @@ Item {
             ExclusiveGroup { id: resradiobuttons }
 			RadioButton{
 				id: thumbnail
-				text: "Low  (128x128)"
+				text: "Low  (256x256)"
 				exclusiveGroup: resradiobuttons
 				onCheckedChanged:{page.resolution = thumbnail.checked+middle.checked*2+high.checked*3}
 				Component.onCompleted:{ checked= plasmoid.configuration.resolution == 1}
