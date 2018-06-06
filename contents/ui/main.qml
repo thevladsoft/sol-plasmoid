@@ -176,7 +176,7 @@ This channel is designed to study solar flares. It measures extremely hot temper
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -204,7 +204,7 @@ This channel is designed to study solar flares. It measures extremely hot temper
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -231,7 +231,7 @@ This channel is especially good at showing coronal loops - the arcs extending of
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -258,7 +258,7 @@ This channel highlights the outer atmosphere of the Sun - called the corona - as
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -285,7 +285,7 @@ This channel highlights the active region of the outer atmosphere of the Sun - t
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -312,7 +312,7 @@ This channel is especially good at showing areas where cooler dense plumes of pl
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -339,7 +339,7 @@ This channel highlights the active region of the outer atmosphere of the Sun - t
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -366,7 +366,7 @@ This channel often shows a web-like pattern of bright areas that highlight place
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -393,7 +393,7 @@ This channel often shows a web-like pattern of bright areas that highlight place
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -420,7 +420,7 @@ This image shows the magnetic field directions near the surface of the Sun. Whit
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -446,7 +446,7 @@ This image shows the magnetic field directions near the surface of the Sun. Whit
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
@@ -474,7 +474,7 @@ This image combines three images with different, but very similar, temperatures.
         onStatusChanged:{
             plasmoid.busy = true
             for(var i = 0;i < root.imagen.length; i++){
-                if(root.imagenes[i].visible == true && root.imagenes[i].status == Image.Ready){
+                if(root.imagenes[i].visible == true && (root.imagenes[i].status == Image.Ready || root.imagenes[i].status == Image.Error)){
                     plasmoid.busy = false
                 }
             }
