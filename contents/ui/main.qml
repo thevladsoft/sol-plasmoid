@@ -523,7 +523,7 @@ This image combines three images with different, but very similar, temperatures.
        width: root.width
        height: root.height
        running: root.imagenes[plasmoid.configuration.source].loading
-       visible: root.imagenes[plasmoid.configuration.source].loading 
+       visible: root.imagenes[plasmoid.configuration.source].loading && plasmoid.configuration.spinner
     }
     
     MouseArea {

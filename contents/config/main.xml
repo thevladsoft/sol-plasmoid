@@ -31,6 +31,11 @@
         <default>false</default>
     </entry>
     
+     <entry name="spinner" type="Bool">
+        <label>Loading indicator</label>
+        <default>true</default>
+    </entry>
+    
   </group>
 
 </kcfg>
